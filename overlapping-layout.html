@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    .hero {
+        width: 100%;
+    }
+    .hero__image {
+        display: block;
+        width: 100%;
+    }
+    .hero__text {
+        background: red;
+        margin-top: -100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 300px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .left {
+        min-height: 300px;
+    }
+    .right {
+        min-height: 200px;
+        background: blue;
+    }
+
+    @media (min-width: 500px) {
+        .hero {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .hero__text {
+            background: green;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+        }
+
+        .content-section {
+            width: 100%;
+            display: flex;
+        }
+
+        .left {
+            width: 50%;
+            padding-top: 100px;
+            margin-top: -80px;
+            background: yellow;
+        }
+
+        .left__content {
+            width: 250px;
+            float: right;
+        }
+
+        .right {
+            width: 50%;
+            padding-top: 100px;
+            margin-top: -80px;
+        }
+
+        .right__content {
+            width: 250px;
+        }
+    }
+</style>
+
+<body>
+    <div class="hero">
+        <img class="hero__image" src="http://placekitten.com/g/800/800">
+        <div class="hero__text">
+            Some hero text stuff
+        </div>
+    </div>
+    <div class="content-section">
+        <div class="left">
+            <div class="left__content">
+                Left content, Left content, Left content, Left content, Left content, Left content,
+            </div>
+        </div>
+        <div class="right">
+            <div class="right__content">
+                Right content, Right content, Right content, Right content, Right content, Right content,
+                Right content, Right content, Right content, Right content, Right content, Right content,
+                Right content, Right content, Right content, Right content, Right content, Right content,
+                Right content, Right content, Right content, Right content, Right content, Right content,
+                Right content, Right content, Right content, Right content, Right content, Right content,
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
